@@ -11,7 +11,6 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
 
             initialView: 'dayGridMonth',
-            //initialView: 'timeGridWeek',1週間ごとの細かい表示の場合
             locale: 'ja',
             height: 'auto',
             firstDay: 1, //0(日曜日)〜6(土曜日)
@@ -31,7 +30,7 @@
 
             eventSources: [ // ←★追記 Laravelのコントローラーを指定
                 {
-                    url: '/get_events',
+                    url: './get_events',
                 },
             ],
             eventSourceFailure() { // ←★追記
