@@ -60,3 +60,6 @@ Route::get('generate_pdf',[ScheduleController::class,'generate_pdf'])->name('gen
 
 Route::get('update',[ScheduleController::class,'update'])->name('update');
 Route::post('update',[ScheduleController::class,'update'])->name('update');
+
+Route::get('calendar',[ScheduleController::class,'calendar'])->name('calendar');
+Route::get('get_events', [ScheduleController::class, 'getEvents']);

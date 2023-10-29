@@ -208,4 +208,48 @@ class ScheduleController extends Controller
     {
         return view('user.index');
     }
+
+    public function calendar()
+    {
+        return view('calendar');
+    }
+
+
+    public function getEvents()
+    {
+
+        $schedules=Schedule::all();
+
+        $data=[];
+        foreach($schedules as $schedule){
+            $title = $schedule -> management_number;
+            $description = $schedule -> product_name;
+            $start = $schedule -> specify_arrival_date;
+            $url = './show/'.$schedule->id;
+            array_push($data,[ 'title' => $title, 'description' => $description, 'url' => $url ,'start' => $start ]);
+        }
+        return $data;
+        /*
+        return [
+            [
+                'title' => '美容院',
+                'description' => '人気の美容室予約取れた',
+                'start' => '2023-10-10',
+                'end'   => '2023-10-10',
+            ],
+            [
+                'title' => 'シルバーウィーク旅行',
+                'description' => '人気の旅館の予約が取れた',
+                'start' => '2023-10-20 10:00:00',
+                'end'   => '2023-10-22 18:00:00',
+                'url'   => 'https://admin.juno-blog.site',
+            ],
+            [
+                'title' => '給料日',
+                'start' => '2023-11-30',
+                'color' => '#ff44cc',
+            ],
+        ];
+        */
+    }
 }
