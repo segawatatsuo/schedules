@@ -224,7 +224,7 @@ class ScheduleController extends Controller
         foreach($schedules as $schedule){
             $title = $schedule -> management_number;
             $description = $schedule -> product_name;
-            $start = $schedule -> specify_arrival_date;
+            $start = $schedule -> order_day;
             $url = './show/'.$schedule->id;
             if($schedule -> request=="至急"){
                 $color ="#FF6E00";
