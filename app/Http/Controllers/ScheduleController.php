@@ -226,7 +226,12 @@ class ScheduleController extends Controller
             $description = $schedule -> product_name;
             $start = $schedule -> specify_arrival_date;
             $url = './show/'.$schedule->id;
-            array_push($data,[ 'title' => $title, 'description' => $description, 'url' => $url ,'start' => $start ]);
+            if($schedule -> request=="至急"){
+                $color ="#FF6E00";
+            }else{
+                $color ="#0065A6";
+            }
+            array_push($data,[ 'title' => $title, 'description' => $description, 'url' => $url ,'start' => $start,'color' => $color, ]);
         }
         return $data;
         /*

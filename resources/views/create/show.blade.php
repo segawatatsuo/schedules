@@ -46,6 +46,9 @@
                                     <div><label>数量：</label>{{ $schedule->quantity }}</div>
                                     <div><label>至急/普通：</label>{{ $schedule->request }}</div>
                                     <div><label>到着日指定：</label>{{ $schedule->specify_arrival_date }}</div>
+                                    <div><label>出荷日：</label>{{ $schedule->ship_date }}</div>
+                                    <div><label>運送会社：</label>{{ $schedule->shipping_company }}</div>
+                                    <div><label>伝票番号：</label>{{ $schedule->slip_number }}</div>
                                 </div>
                             </div>
                         </div>     
