@@ -3,10 +3,6 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>スケジュール</h1>
-@stop
-
-@section('js')
 
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
 <script>
@@ -58,8 +54,13 @@
 </script>
 
 
-
+    <h1>スケジュール</h1>
 @stop
+
+
+
+
+
 @section('content')
 <div class="col-md-12">
     <div class="card card-primary">
@@ -92,4 +93,8 @@
         background-color: #ffebf5;
     }
 </style>
+@stop
+
+@section('js')
+
 @stop
