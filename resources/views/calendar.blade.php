@@ -30,7 +30,7 @@
 
                 eventSources: [ // ←★追記 Laravelのコントローラーを指定
                     {
-                        url: '/get_events',
+                        url: './get_events',
                     },
                 ],
                 eventSourceFailure() { // ←★追記
