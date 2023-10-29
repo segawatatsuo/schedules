@@ -16,13 +16,13 @@
 
             <thead>
                 <tr>
-                    <th style="width: 15%">注文日</th>
-                    <th style="width: 15%">管理番号</th>
-                    <th style="width: 15%">生地番号</th>
-                    <th style="width: 15%">商品名</th>
-                    <th style="width: 15%">数量</th>
-                    <th style="width: 15%">要望</th>
-                    <th style="width: 10%">到着指定</th>
+                    <th>注文日</th>
+                    <th>管理番号</th>
+                    <th>生地番号</th>
+                    <th>商品名</th>
+                    <th>数量</th>
+                    <th>要望</th>
+                    <th>到着指定</th>
                 </tr>
             </thead>
 
@@ -36,11 +36,6 @@
                         <td>{{ $product->quantity }}</td>
                         <td>{{ $product->request }}</td>
                         <td>{{ $product->specify_arrival_date }}</td>
-
-                        <td>
-                        </td>
-                        <td>
-                        </td>
                     </tr>
                 @endforeach
             </tbody>
