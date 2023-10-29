@@ -225,7 +225,7 @@ class ScheduleController extends Controller
             $title = $schedule -> management_number;
             $description = $schedule -> product_name;
             $start = $schedule -> specify_arrival_date;
-            $url = './show/'.$schedule->id;
+            $url = 'http://lookingfor.jp/schedules/show/'.$schedule->id;
             array_push($data,[ 'title' => $title, 'description' => $description, 'url' => $url ,'start' => $start ]);
         }
         return $data;
