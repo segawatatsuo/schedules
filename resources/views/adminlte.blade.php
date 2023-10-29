@@ -11,6 +11,7 @@
     <div class="card card-primary">
         <div class="card-body p-0">
             <div id='calendar'></div>
+            <script src="{{ mix('js/app.js') }}"></script>
         </div>
     </div>
 </div>
@@ -25,7 +26,7 @@
 
 @section('js')
 
-    <script src="{{ mix('js/app.js') }}"></script>
+    
 
 
 
