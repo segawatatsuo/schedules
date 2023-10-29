@@ -12,6 +12,7 @@
         <div class="card-body p-0">
             <div id='calendar'></div>
             <script src="{{ mix('js/app.js') }}"></script>
+            <script src="http://lookingfor.jp/schedules/js/app.js"></script>
         </div>
     </div>
 </div>
