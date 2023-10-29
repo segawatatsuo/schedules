@@ -6,40 +6,6 @@
     <h1>スケジュール</h1>
 @stop
 
-@section('content')
-<div class="col-md-12">
-    <div class="card card-primary">
-        <div class="card-body p-0">
-            <div id='calendar'></div>
-            <!--
-            <script src="http://lookingfor.jp/schedules/js/app.js"></script>
-            <script src="https://lookingfor.jp/schedules/js/app.js"></script>
-            <script src="{{ mix('js/app.js') }}"></script>
-            -->
-
-
-        </div>
-    </div>
-</div>
-
-@stop
-
-@section('css')
-<style>
-    .fc-col-header-cell-cushion,
-    .fc-daygrid-day-number,
-    .fc-daygrid-day-top {
-        color: #333;
-    }
-    .fc-day-sat {
-        background-color: #f2f7fc;
-    }
-    .fc-day-sun {
-        background-color: #ffebf5;
-    }
-</style>
-@stop
-
 @section('js')
 
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
@@ -93,4 +59,37 @@
 
 
 
+@stop
+@section('content')
+<div class="col-md-12">
+    <div class="card card-primary">
+        <div class="card-body p-0">
+            <div id='calendar'></div>
+            <!--
+            <script src="http://lookingfor.jp/schedules/js/app.js"></script>
+            <script src="https://lookingfor.jp/schedules/js/app.js"></script>
+            <script src="{{ mix('js/app.js') }}"></script>
+            -->
+
+
+        </div>
+    </div>
+</div>
+
+@stop
+
+@section('css')
+<style>
+    .fc-col-header-cell-cushion,
+    .fc-daygrid-day-number,
+    .fc-daygrid-day-top {
+        color: #333;
+    }
+    .fc-day-sat {
+        background-color: #f2f7fc;
+    }
+    .fc-day-sun {
+        background-color: #ffebf5;
+    }
+</style>
 @stop
