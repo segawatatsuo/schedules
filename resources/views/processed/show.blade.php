@@ -39,6 +39,7 @@
                             <div class="col-sm-3">
                                 <div class="form-group">
                                     <div><label>注文日：</label>{{ $schedule->order_day }}</div>
+                                    <div><label>管理番号：</label>{{ $schedule->management_number }}</div>
                                     <div><label>生地番号：</label>{{ $schedule->material }}</div>
                                     <div><label>商品名：</label>{{ $schedule->product_name }}</div>
                                     <div><label>数量：</label>{{ $schedule->quantity }}</div>
